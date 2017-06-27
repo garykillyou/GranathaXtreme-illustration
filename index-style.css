@@ -5,48 +5,118 @@
     padding-top: 1px;
 }
 
-#purple {
+.purple:link {
     color: purple;
+    text-decoration: none;
 }
 
-#yellow {
+.purple:visited {
+    color: purple;
+    text-decoration: none;
+}
+
+.purple:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.purple:active {
+    color: black;
+}
+
+.yellow:link {
     color: yellow;
+    text-decoration: none;
 }
 
-#red {
+.yellow:visited {
+    color: yellow;
+    text-decoration: none;
+}
+
+.yellow:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.yellow:active {
+    color: black;
+}
+
+.red:link {
     color: red;
+    text-decoration: none;
 }
 
-#blue {
+.red:visited {
+    color: red;
+    text-decoration: none;
+}
+
+.red:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.red:active {
+    color: black;
+}
+
+.blue:link {
     color: blue;
+    text-decoration: none;
 }
 
-#green {
+.blue:visited {
+    color: blue;
+    text-decoration: none;
+}
+
+.blue:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.blue:active {
+    color: black;
+}
+
+.green:link {
     color: green;
+    text-decoration: none;
+}
+
+.green:visited {
+    color: green;
+    text-decoration: none;
+}
+
+.green:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.green:active {
+    color: black;
 }
 
 #index {
     text-align: center;
 }
 
-
 #table1 {
     width: 90%;
-    background-color: white;
+    background-color: darkgray;
     margin: auto;
-    table-layout:fixed;
+    table-layout: fixed;
     font-size: 44px;
     font-family: Microsoft JhengHei;
-    
 }
 
 #nav {
     background-color: black;
     padding: 20px
-    
 }
-
-
 
 #aside {
     width: 25%;
@@ -63,3 +133,7 @@
     text-align: center;
     float: right;
 }
+
+
+
+
