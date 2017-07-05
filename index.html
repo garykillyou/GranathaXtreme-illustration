@@ -2,43 +2,98 @@
 <html>
 
 <head>
-    <meta charset="UTF-8" />
-    <title>葛蘭娜莎：神液 圖鑑</title>
-    <link rel="stylesheet" type="text/css" href="index-style.css">
+	<meta charset="UTF-8" />
+	<title>葛蘭娜莎：神液 圖鑑</title>
+	<link rel="stylesheet" type="text/css" href="index-style.css">
+	<script src="jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="index-js.js"></script>
 </head>
 
 <body>
+	<div id="logo">
+		<font face="Microsoft JhengHei">葛蘭娜莎：神液 圖鑑</font>
+		<br>
+		<div id="img_logo">
+			<a href="index.html">
+				<img src="index-picture/logo2.png">
+			</a>
+		</div>
+	</div>
 
-    <header id="header">
-        <h1>
-            <font face="DFKai-sb">葛蘭娜莎：神液 圖鑑</font>
-        </h1>
-        <a href="index.html"><img src="index-picture/logo.png"></a>
-    </header>
+	<nav id="nav">
+		<table id="table1" border="1">
+			<tr style="height = 100px">
+				<th>
+					<div>
+						<div id="purple" class="attributeClick" onclick="clickPurple()">瑟堤納</div>
+					</div>
+				</th>
+				<th>
+					<div>
+						<div id="yellow" class="attributeClick" onclick="clickYellow()">土尼勒</div>
+					</div>
+				</th>
+				<th>
+					<div>
+						<div id="red" class="attributeClick" onclick="clickRed()">提勒莎</div>
+					</div>
+				</th>
+				<th>
+					<div>
+						<div id="blue" class="attributeClick" onclick="clickBlue()">弗雷伊西斯</div>
+					</div>
+				</th>
+				<th>
+					<div>
+						<div id="green" class="attributeClick" onclick="clickGreen()">奧狄烏斯</div>
+					</div>
+				</th>
+			</tr>
+		</table>
 
-    <nav id="nav">
-        <table id="table1" border="1">
-            <tr style="height = 100px">
-                <th><a class="purple" href="index.html">瑟堤納</a></th>
-                <th><a class="yellow" href="index.html">土尼勒</a></th>
-                <th><a class="red" href="index.html">提勒莎</a></th>
-                <th><a class="blue" href="index.html">弗雷伊西斯</a></th>
-                <th><a class="green" href="index.html">奧狄烏斯</a></th>
-            </tr>
-        </table>
+
+	</nav>
+
+	<div id="detail">
+		<aside id="aside">
+			<div style="height: 25px"></div>
+			<div>
+				<div>
+					<div id="fiveStar" class="starNum"> 5星 </div>
+				</div>
+				<div>
+					<div id="fourStar" class="starNum"> 4星 </div>
+				</div>
+				<div>
+					<div id="threeStar" class="starNum"> 3星 </div>
+				</div>
+				<div>
+					<div id="test2"> 測試 </div>
+				</div>
+				<div>
+					<div id="addRow"> add </div>
+				</div>
+				<div>
+					<div id="clearTable"> clearTable </div>
+				</div>
+			</div>
+		</aside>
+
+		<section id="illustrations">
+			<h1 id="test">顯示內容</h1>
+			<table id="illustrations_table" border="1">
+				<tr id="illustrations_table_title">
+					<th>名稱</th>
+					<th>圖片</th>
+					<th>星等</th>
+				</tr>
+			</table>
+		</section>
+	</div>
 
 
-    </nav>
 
-    <div></div>
 
-    <aside id="aside">
-        <h1>左側選單</h1>
-    </aside>
-
-    <section id="section">
-        <h1>顯示內容</h1>
-    </section>
 
 </body>
 
