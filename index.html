@@ -6,6 +6,8 @@
 	<title>葛蘭娜莎：神液 圖鑑</title>
 	<link rel="stylesheet" type="text/css" href="index-style.css">
 	<script src="jquery-3.2.1.js"></script>
+	<link href="fancybox-3.1.20/dist/jquery.fancybox.min.css" rel="stylesheet">
+	<script src="fancybox-3.1.20/dist/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="index-js.js"></script>
 </head>
 
@@ -76,23 +78,30 @@
 				<div>
 					<div id="clearTable"> clearTable </div>
 				</div>
+				<div id="test">
+					顯示內容
+				</div>
 			</div>
 		</aside>
 
-		<section id="illustrations">
-			<h1 id="test">顯示內容</h1>
+		<div id="illustrations">
+			<div style="height: 25px"></div>
 			<table id="illustrations_table" border="1">
 				<tr id="illustrations_table_title">
 					<th>名稱</th>
 					<th>圖片</th>
 					<th>星等</th>
 				</tr>
+				<tr>
+					<td>名稱</td>
+					<td>
+						<a data-fancybox href="illustration-picture/red/001.png"><img  src="illustration-picture/red/001.png" height="300px"></a>
+					</td>
+					<td>星等</td>
+				</tr>
 			</table>
-		</section>
+		</div>
 	</div>
-
-
-
 
 
 </body>

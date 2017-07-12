@@ -1,17 +1,32 @@
 // 首頁載入完成後綁定物件事件
 $(document).ready(function () {
+	/*
 	$("#test").click(function () {
 		alert("TEST");
 	});
-
+	*/
 	$("#addRow").click(function () {
 		alert("addRow");
 		createTable();
 	});
 
 	$("#clearTable").click(function () {
-		alert("clearTable");
-		clearTable();
+		var gg = $(this);
+		$(this).animate({
+			fontSize: "200px"
+		}, "slow", function () {
+			test2(gg);
+		});
+	});
+	/*
+	$(".picGG").click(function() {
+		$(this).animate({
+			height:"500px"
+		}, "slow");
+	});
+	*/
+	$('[data-fancybox]').fancybox({
+		protect: true
 	});
 });
 // 首頁載入完成後綁定物件事件
@@ -22,7 +37,8 @@ function clickPurple() {
 		color: "purple",
 		name: "瑟堤納"
 	}).always(function (data) {
-		$("#test").text(data);
+		clearTable();
+		$("#illustrations_table_title").after(data);
 	});
 }
 
@@ -32,7 +48,8 @@ function clickYellow() {
 		color: "yellow",
 		name: "土尼勒"
 	}).always(function (data) {
-		$("#test").text(data);
+		clearTable();
+		$("#illustrations_table_title").after(data);
 	});
 }
 
@@ -42,7 +59,8 @@ function clickRed() {
 		color: "red",
 		name: "提勒莎"
 	}).always(function (data) {
-		$("#test").text(data);
+		clearTable();
+		$("#illustrations_table_title").after(data);
 	});
 }
 
@@ -52,7 +70,8 @@ function clickBlue() {
 		color: "blue",
 		name: "弗雷伊西斯"
 	}).always(function (data) {
-		$("#test").text(data);
+		clearTable();
+		$("#illustrations_table_title").after(data);
 	});
 }
 
@@ -62,8 +81,34 @@ function clickGreen() {
 		color: "green",
 		name: "奧狄烏斯"
 	}).always(function (data) {
+		clearTable();
 		$("#illustrations_table_title").after(data);
 	});
+}
+
+function test(gg) {
+	gg.unbind();
+	gg.click(function () {
+		gg.animate({
+			fontSize: "200px"
+		}, "slow", function () {
+			test2(gg);
+		});
+		// test();
+	});
+
+}
+
+function test2(gg) {
+	gg.unbind();
+	gg.click(function () {
+		gg.animate({
+			fontSize: "50px"
+		}, "slow", function () {
+			test(gg);
+		});
+	});
+
 }
 
 function createTable() {

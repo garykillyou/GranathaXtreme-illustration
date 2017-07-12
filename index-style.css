@@ -3,23 +3,11 @@
 	text-decoration: underline;
 }
 
-
-
-
-
-
-
 #yellow {
 	color: yellow;
 	width: 50%;
 	margin: auto;
 }
-
-
-
-
-
-
 
 #red {
 	color: red;
@@ -27,23 +15,11 @@
 	margin: auto;
 }
 
-
-
-
-
-
-
 #blue {
 	color: blue;
 	width: 80%;
 	margin: auto;
 }
-
-
-
-
-
-
 
 #green {
 	color: green;
@@ -73,7 +49,7 @@
 
 #aside {
 	width: 25%;
-	height: 590px;
+	height: 900px;
 	background-color: brown;
 	text-align: center;
 	float: left;
@@ -82,10 +58,11 @@
 
 #illustrations {
 	width: 75%;
-	height: 590px;
+	height: 900px;
 	background-color: bisque;
 	text-align: center;
 	float: right;
+	overflow: auto;
 }
 
 #purple {
@@ -118,7 +95,6 @@ a {}
 
 #img_logo {
 	position: relative;
-	
 }
 
 .starNum:hover {
@@ -139,5 +115,6 @@ a {}
 
 #illustrations_table_title {
 	font-size: 30px;
-
 }
+
+
